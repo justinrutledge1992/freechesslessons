@@ -1,12 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About Page</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About | Free Chess Lessons</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
-    <h1>Free Chess Lessons is...</h1>
-    <p>This is a basic page...</p>
+  <div class="site">
+    <div id="site-header"></div>
+    <main>
+      <section class="section">
+        <div class="container">
+          <div class="section-header">
+            <p class="section-kicker">About</p>
+            <h1 class="section-title">Meet Ben.</h1>
+            <p class="section-lead">
+              A lifelong chess player who saw a need in Chattanooga — and decided to act.
+            </p>
+          </div>
+
+          <div class="card-grid">
+            <article class="card">
+              <h3>Years of playing &amp; coaching</h3>
+              <p>
+                Ben has been playing chess since childhood and has spent years
+                casually teaching friends, family, and local players. Over time,
+                he realized that many people who could benefit most from the structure
+                and joy of chess had the fewest opportunities to learn.
+              </p>
+            </article>
+
+            <article class="card">
+              <h3>Seeing the need up close</h3>
+              <p>
+                After spending time in spaces like the Community Kitchen, the YMCA,
+                local libraries, and coffee shops, Ben noticed how many people were
+                looking for connection, routine, and something meaningful to focus on.
+                Chess became a natural bridge.
+              </p>
+            </article>
+
+            <article class="card">
+              <h3>A simple idea: teach for free</h3>
+              <p>
+                Instead of charging standard coaching rates, Ben began offering
+                lessons free of charge for people experiencing homelessness, mental
+                health challenges, disability, or financial hardship, and asking
+                the broader community to support the work through donations.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div id="site-footer"></div>
+  </div>
+
+  <script src="assets/js/main.js"></script>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>

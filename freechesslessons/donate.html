@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Donate | Free Chess Lessons</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <div class="site">
+    <div id="site-header"></div>
+    <main>
+      <section class="section">
+        <div class="container">
+          <div class="section-header">
+            <p class="section-kicker">Donate</p>
+            <h1 class="section-title">Help keep the lessons free.</h1>
+            <p class="section-lead">
+              Your support helps cover boards, clocks, transportation, online tools,
+              and time spent coaching students who cannot pay.
+            </p>
+          </div>
+
+          <div class="card">
+            <h2>Give through GoFundMe</h2>
+            <p>
+              Donations are currently accepted through GoFundMe. Every contribution,
+              large or small, helps Ben continue offering free lessons to those who
+              need them most.
+            </p>
+            <p style="margin: 1rem 0;">
+              <a href="https://www.gofundme.com/" class="btn btn-primary" target="_blank" rel="noopener">
+                Open GoFundMe
+              </a>
+            </p>
+            <p class="muted">
+              If you’d like to support in another way (equipment, transportation, or
+              sponsoring a specific program), please <a href="contact.html">reach out directly</a>.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div>© <span id="year"></span> Free Chess Lessons · Chattanooga, TN</div>
+        <div>
+          Thank you for supporting community chess in Chattanooga.
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="assets/js/main.js"></script>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
