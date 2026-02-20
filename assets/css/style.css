@@ -648,7 +648,15 @@ strong {
   }
 
   .nav-mobile-actions {
-    margin-left: auto;
+    margin-left: 0;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .nav-mobile-btns {
+    display: flex;
+    gap: 0.6rem;
+    align-items: center;
   }
 
   .nav-brand span {
