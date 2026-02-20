@@ -56,6 +56,8 @@ document.addEventListener("DOMContentLoaded", () => {
     setActiveNavLink();
   });
 
+  loadPartial("site-donate", "partials/donate-banner.html");
+
   loadPartial("site-footer", "partials/footer.html", () => {
     // update year after footer loads
     const yearSpan = document.querySelector("#site-footer #year");

@@ -44,6 +44,7 @@ body {
 
 main {
   flex: 1;
+  padding-top: 80px; /* offset for fixed header */
 }
 
 .container {
@@ -58,8 +59,10 @@ main {
 .site-header {
   background: var(--bg-alt);
   border-bottom: 4px solid var(--accent);
-  position: sticky;
+  position: fixed;
   top: 0;
+  left: 0;
+  right: 0;
   z-index: 50;
   box-shadow: var(--shadow-warm);
 }
@@ -113,6 +116,30 @@ main {
   color: var(--accent);
   background: var(--gold-soft);
   transform: translateY(-1px);
+}
+
+/* Mobile contact button (hidden on desktop) */
+.nav-mobile-actions {
+  display: none;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.nav-contact-btn {
+  display: inline-block;
+  background: var(--accent);
+  color: #fff !important;
+  font-weight: 700;
+  font-size: 0.9rem;
+  padding: 0.45rem 1rem;
+  border-radius: 4px;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: background 0.2s;
+}
+
+.nav-contact-btn:hover {
+  background: var(--accent-dark, #6b1a08);
 }
 
 /* Mobile nav */
@@ -520,6 +547,7 @@ strong {
 
   .nav {
     padding: 0.85rem 1.5rem;
+    flex-wrap: wrap;
   }
 
   .nav-links {
@@ -534,9 +562,14 @@ strong {
     align-items: center;
     display: none;
     box-shadow: 0 8px 16px rgba(139, 47, 16, 0.1);
+    width: 100%;
   }
 
   .nav-links.is-open {
+    display: flex;
+  }
+
+  .nav-mobile-actions {
     display: flex;
   }
 
@@ -554,5 +587,83 @@ strong {
   
   .impact-grid {
     grid-template-columns: 1fr;
+  }
+}
+/* ── Donate Banner (index page) ───────────────────────────── */
+.donate-banner {
+  background: var(--accent);
+  color: #fff;
+  padding: 4rem 0;
+}
+
+.donate-banner-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2.5rem;
+}
+
+.donate-banner-title {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #fff;
+  margin-bottom: 0.75rem;
+  line-height: 1.2;
+}
+
+.donate-banner-lead {
+  font-size: 1.05rem;
+  color: rgba(255,255,255,0.88);
+  max-width: 520px;
+  line-height: 1.6;
+}
+
+.donate-banner-action {
+  flex-shrink: 0;
+  text-align: center;
+}
+
+.btn-donate {
+  display: inline-block;
+  background: var(--gold);
+  color: var(--text) !important;
+  font-weight: 800;
+  font-size: 1.15rem;
+  padding: 1rem 2.2rem;
+  border-radius: 8px;
+  text-decoration: none;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+  transition: background 0.2s, transform 0.15s;
+  white-space: nowrap;
+}
+
+.btn-donate:hover {
+  background: #f0c96a;
+  transform: translateY(-2px);
+}
+
+.donate-banner-sub {
+  margin-top: 0.75rem;
+  font-size: 0.88rem;
+  color: rgba(255,255,255,0.75);
+}
+
+.donate-banner-sub a {
+  color: rgba(255,255,255,0.95);
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .donate-banner-inner {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .donate-banner-lead {
+    max-width: 100%;
+  }
+
+  .donate-banner-title {
+    font-size: 1.6rem;
   }
 }
