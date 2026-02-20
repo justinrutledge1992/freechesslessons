@@ -647,6 +647,10 @@ strong {
     display: none;
   }
 
+  .nav-mobile-actions {
+    margin-left: auto;
+  }
+
   .nav-brand span {
     display: none;
   }
