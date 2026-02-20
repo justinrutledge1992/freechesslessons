@@ -120,6 +120,7 @@ main {
 
 .nav-links a.nav-contact-btn.is-active {
   background: var(--accent-dark);
+  color: #000 !important;
 }
 
 .nav-links a.nav-donate-btn.is-active {
@@ -640,6 +641,10 @@ strong {
 
   .nav-links.is-open {
     display: flex;
+  }
+
+  .nav-brand {
+    display: none;
   }
 
   .nav-brand span {
