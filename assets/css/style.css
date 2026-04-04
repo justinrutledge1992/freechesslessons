@@ -337,6 +337,43 @@ main {
   text-align: center;
 }
 
+/* Home page intro section */
+
+.section-home {
+  background: linear-gradient(135deg, rgba(230, 184, 92, 0.08) 0%, rgba(26, 143, 143, 0.08) 100%);
+}
+
+.section-home-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr);
+  gap: 3rem;
+  align-items: center;
+}
+
+.home-cta {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  align-items: flex-start;
+  margin-top: 1.8rem;
+}
+
+.home-cta-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.section-home .hero-image-wrap {
+  max-width: 100%;
+}
+
+@media (max-width: 768px) {
+  .section-home-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 /* Sections */
 
 .section {
