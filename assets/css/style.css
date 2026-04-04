@@ -23,7 +23,14 @@
   box-sizing: border-box;
 }
 
+html {
+  overflow-x: hidden;
+  width: 100%;
+}
+
 body {
+  overflow-x: hidden;
+  width: 100%;
   margin: 0;
   font-family: "Georgia", "Palatino", "Times New Roman", serif;
   background: var(--bg);
@@ -171,6 +178,24 @@ main {
 .nav-contact-btn:hover,
 .nav-links a.nav-contact-btn:hover {
   background: var(--accent-dark, #6b1a08);
+  color: #fff !important;
+}
+
+.nav-meetups-btn {
+  display: none; /* mobile only */
+  background: var(--teal);
+  color: #fff !important;
+  font-weight: 700;
+  font-size: 0.9rem;
+  padding: 0.45rem 1rem;
+  border-radius: 4px;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: background 0.2s;
+}
+
+.nav-meetups-btn:hover {
+  background: #147a7a;
   color: #fff !important;
 }
 
@@ -664,9 +689,14 @@ strong {
   }
 
   .nav-contact-btn,
-  .nav-donate-btn {
+  .nav-donate-btn,
+  .nav-meetups-btn {
     font-size: 0.78rem;
     padding: 0.35rem 0.7rem;
+  }
+
+  .nav-meetups-btn {
+    display: inline-block;
   }
 
   .nav-mobile-actions {
