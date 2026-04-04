@@ -621,7 +621,7 @@ strong {
   }
 
   .nav {
-    padding: 0.85rem 1.5rem;
+    padding: 0.85rem 0;
     flex-wrap: nowrap;
     align-items: center;
   }
@@ -646,7 +646,8 @@ strong {
 
   .nav-links {
     position: absolute;
-    inset-inline: 0;
+    left: 0;
+    right: 0;
     top: 100%;
     background: var(--bg-alt);
     border-bottom: 3px solid var(--accent);
