@@ -228,6 +228,7 @@ main {
 .hero {
   padding: 3.5rem 0 3rem;
   background: linear-gradient(135deg, rgba(230, 184, 92, 0.08) 0%, rgba(26, 143, 143, 0.08) 100%);
+  overflow-x: clip;
 }
 
 .hero-grid {
@@ -351,6 +352,7 @@ main {
 
 .section {
   padding: 3rem 0;
+  overflow-x: clip;
 }
 
 .section-header {
