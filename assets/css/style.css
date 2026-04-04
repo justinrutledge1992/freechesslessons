@@ -26,11 +26,13 @@
 html {
   overflow-x: hidden;
   width: 100%;
+  max-width: 100%;
 }
 
 body {
   overflow-x: hidden;
   width: 100%;
+  max-width: 100%;
   margin: 0;
   font-family: "Georgia", "Palatino", "Times New Roman", serif;
   background: var(--bg);
@@ -47,6 +49,8 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  width: 100%;
+  max-width: 100vw;
 }
 
 main {
@@ -621,7 +625,7 @@ strong {
   }
 
   .nav {
-    padding: 0.85rem 0;
+    padding: 0.85rem 1.5rem;
     flex-wrap: nowrap;
     align-items: center;
   }
@@ -646,8 +650,7 @@ strong {
 
   .nav-links {
     position: absolute;
-    left: 0;
-    right: 0;
+    inset-inline: 0;
     top: 100%;
     background: var(--bg-alt);
     border-bottom: 3px solid var(--accent);
