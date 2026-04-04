@@ -356,6 +356,7 @@ main {
   gap: 0.75rem;
   align-items: flex-start;
   margin-top: 1.8rem;
+  margin-bottom: 2rem;
 }
 
 .home-cta-row {
@@ -371,6 +372,7 @@ main {
 @media (max-width: 768px) {
   .section-home-grid {
     grid-template-columns: 1fr;
+    gap: 2rem;
   }
 }
 
